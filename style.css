@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --blue: #293B56;
+    --blue_blur: #1E3154cc
+}
+
+* {
+    /* border: 1px solid black; */
+    font-family: 'Open sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: flex;
+}
+
+.navigation {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button_wrapper div:hover {
+    background-color: var(--blue_blur);
+    cursor: pointer;
+}
+
+.logo_wrapper {
+    /* background-color: blue; */
+    color: var(--blue);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logo_wrapper:hover {
+    cursor: default;
+}
+
+.nav_button {
+    width: 100px;
+    /* flex: 1; */
+    justify-content: center;
+    padding: 15px;
+    font-size: 13px;
+    align-items: center;
+}
+
+.carousel {
+    width: 95%;
+    margin: auto;
+
+    height: auto;
+}
+
+.big_image {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    object-fit: cover;
+    object-position: 0% 50%;
+}
+
+.scroll_button {
+    padding: 5px;
+    border: 2px solid #5a5a5a;
+    background-color: gray;
+    color: white;
+}
+
+.scroll_button:hover {
+    cursor: pointer;
+    background-color: #5a5a5a;
+}
+
+.carousel::before {
+    font-size: 13px;
+    position: absolute;
+    height: 20px;
+    content: "Call us: 0300 6942034";
+    background-color: var(--blue_blur);
+    color: white;
+    padding: 10px;
+    margin-left: 70%;
+}
+
+.all_sales_ad {
+
+    flex-direction: column;
+    position: absolute;
+    content: "Stunning houses in the heart of the city";
+    background-color: var(--blue_blur);
+
+    margin-left: 15%;
+    margin-top: 20%;
+    padding: 15px;
+    width: 200px;
+    color: white;
+
+}
+
+.wb_heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.wb_description {
+    font-size: 14px;
+    font-weight: lighter;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+
+.wb_price {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.wb_buy {
+    display: flex;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px;
+    justify-content: center;
+    transition: 0.1s;
+}
+
+.wb_buy:hover {
+    background-color: white;
+    color: var(--blue);
+}
+
+.heading {
+    justify-self: center;
+    justify-content: center;
+    color: #293B56;
+    margin-top: 150px;
+    font-size: 25px;
+}
+
+.post_parent {
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.post_preview {
+    width: 300px;
+    overflow: hidden;
+    flex-direction: column;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.post_thumbnail_wrapper {
+    aspect-ratio: 1/1;
+    height: auto;
+    width: 100%;
+}
+
+.post_thumbnail {
+    display: flex;
+    width: 100%;
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+#uno {
+    object-position: 90% 0;
+}
+
+#dos {
+    object-position: 45%;
+}
+
+#hombres {
+    object-position: 0% 60%;
+}
+
+.post_heading {
+    margin-bottom: 10px;
+    color: #293B56;
+
+}
+
+.post_price {
+    margin-bottom: 10px;
+    color: #293B56;
+}
+
+.post_bedrooms {
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 14px;
+}
+
+.post_description {
+    margin-bottom: 15px;
+    color: gray;
+    font-size: 13px;
+}
+
+.post_readmore {
+    color: var(--blue);
+    text-decoration: none;
+    border: 2px solid var(--blue);
+    padding: 10px;
+    font-size: 14px;
+    width: max-content;
+    transition: 0.1s;
+}
+
+.post_readmore:hover {
+    border: 2px solid var(--blue);
+    color: white;
+    background-color: var(--blue);
+}
