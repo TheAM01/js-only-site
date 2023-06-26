@@ -182,6 +182,7 @@ div {
 
 #hombres {
     object-position: 0% 60%;
+    aspect-ratio: 1/1;
 }
 
 .post_heading {

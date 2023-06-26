@@ -220,6 +220,8 @@ function createPost(img, name, p, b, tid) {
 
 function changeCarouselImage(direction) {
 
+    
+
     const images = [
         "https://static.wixstatic.com/media/e3c73352fb2f466daa0c0b7869c8ecc7.jpg/v1/fill/w_980,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e3c73352fb2f466daa0c0b7869c8ecc7.jpg",
         "https://images.livspace-cdn.com/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2018/12/22103134/Cover-1.jpg",
